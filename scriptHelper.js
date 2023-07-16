@@ -67,9 +67,9 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("Cargo Level: Is Not a Number")
     }
     else {
-        list.style.visibility = "hidden";
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
+        list.style.visibility = "hidden";
         let launchStatus = document.getElementById("launchStatus");
         if (fuelLevel < 10000 && cargoLevel <= 10000) {
             launchStatus.style.color = "rgb(199, 37, 78)";
