@@ -66,7 +66,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("Cargo Level: Is Not a Number")
     }
     else {
-        list.style.visibility = "visible";
+        list.style.visibility = "hidden";
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
         let launchStatus = document.getElementById("launchStatus");
