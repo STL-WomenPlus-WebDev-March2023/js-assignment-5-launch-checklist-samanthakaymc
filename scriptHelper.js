@@ -1,6 +1,11 @@
 // Write your helper functions here!
 
 require('isomorphic-fetch');
+window.addEventListener ("load", function(){
+
+})
+
+//require('isomorphic-fetch');
 //require('cross-fetch/polyfill');
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
@@ -33,6 +38,7 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    list.style.visibility = "hidden";
     let fuelStatus = document.getElementById("fuelStatus");
     let cargoStatus = document.getElementById("cargoStatus");
     let pilotStatus = document.getElementById("pilotStatus");

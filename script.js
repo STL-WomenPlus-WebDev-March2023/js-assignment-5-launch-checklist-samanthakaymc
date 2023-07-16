@@ -28,7 +28,7 @@ window.addEventListener("load", function() {
         // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
         let selectPlanet = pickPlanet(listedPlanets);
         addDestinationInfo(document, selectPlanet.name, selectPlanet.diameter, selectPlanet.star, selectPlanet.distance, selectPlanet.moons, selectPlanet.image)
-        selectPlanet.style.visibility = "visible";
+        //selectPlanet.style.visibility = "visible";
    })
    
 });
