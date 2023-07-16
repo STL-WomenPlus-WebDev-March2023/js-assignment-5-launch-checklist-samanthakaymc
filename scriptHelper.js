@@ -32,6 +32,11 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    let fuel = document.getElementById("fuelStatus");
+    let cargo = document.getElementById("cargoStatus");
+    let pilotStatus = document.getElementById("pilotStatus");
+    let copilotStatus = document.getElementById("copilotStatus");
+
     if (pilot === "" || copilot === "" || fuelLevel === "" || cargoLevel=== "") {
         alert("All fields are required.");
     }
@@ -98,7 +103,7 @@ async function myFetch() {
 
 function pickPlanet(planets) {
     let index = Math.floor(Math.random()*planets.length);
-    return planets[index]
+    return planets[index];
     //let num = Math.random()*10;
 }
 
